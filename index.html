@@ -429,7 +429,8 @@
 
 
 
-<style>
+  <!-- Your existing CSS -->
+  <style>
 .v5-banner-section {
   position: relative;
   width: 100%;
@@ -547,7 +548,10 @@
       <img src="./assets/images/logo/v5 banner.jpg" alt="V5 Image">
     </div>
   </div>
-</section>
+</section> 
+
+
+
 
 
 
@@ -803,256 +807,158 @@
         </section> -->
 
 
-        <style>
-            .hero-section {
-                background-color: #7d90C5;
-                padding: 50px 0;
-                 background-image: url('https://img.freepik.com/free-vector/circuit-lines-technology-diagram-background-red-shade_1017-26284.jpg'); /* Change to your image path */
-    background-size: cover;
-    background-position: center;
-            }
-            .hero-section .container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                 flex-wrap: wrap;
-                 gap: 20px;
-            }
-            .hero-section .card {
-    background-color: white;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    min-width: 280px;
-    margin-bottom: 30px;
+       <!-- FontAwesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+/* SECTION */
+.hero-section {
+  position: relative;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Remove extra margin from the last card */
-.hero-section .card:last-child {
-    margin-bottom: 0;
+/* Background Video */
+.hero-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 80px;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.75;
 }
-            
 
-@media (max-width: 991px) {
-    .hero-section .container {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .hero-section .card {
-        width: 100%;
-    }
+/* Overlay */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  z-index: 2;
 }
-            .hero-section h2 {
-                font-size: 24px;
-                margin-bottom: 10px;
-            }
-            .hero-section p {
-                font-size: 16px;
-                line-height: 1.5;
-            }
-            .rs-section-title-wrapper {
-                margin-bottom: 30px;
-            }
-            .rs-section-title {
-                font-size: 32px;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-            .rs-section-subtitle {
-                font-size: 18px;
-                color: #7d90C5;
-                display: flex;
-                align-items: center;
-            }
-            .rs-section-subtitle svg {
-                margin-right: 8px;
-            }
-            .rs-about-description p {
-                margin-bottom: 15px;
-            }
-            .rs-about-description .descrip-1 {
-                font-weight: bold;
-            }
-            .rs-about-description .descrip-2 {
-                color: #555;
-            }
-            .rs-about-thumb {
-                position: relative;
-                overflow: hidden;
-                border-radius: 8px;
-            }
-            .rs-about-bg-thumb {
-    width: 100%;
-    height: 320px;
-    background-size: cover !important;
-    background-position: center !important;
-    border-radius: 8px;
-    margin-bottom: 20px;
+
+/* Cards Container */
+.hero-section .container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 20px;
 }
-            .rs-about-thumb-wrapper {
-                position: relative;
-                margin-bottom: 30px;
-            }
-            .rs-about-thumb-wrapper::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(255, 255, 255, 0.8);
-                border-radius: 8px;
-            }
-            .rs-about-thumb-wrapper .rs-about-thumb {
-                position: relative;
-                z-index: 1;
-            }
-            .rs-about-btn {
-                margin-top: 20px;
-            }
-            .card {
-      display: flex;
-      align-items: flex-start;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      padding: 25px;
-      gap: 20px;
-      transition: 0.3s ease;
-      width: 100%;
-    }
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-left {
-      flex-shrink: 0;
-      font-size: 40px;
-      color: #7d90C5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 70px;
-    }
-
-    .card-right h2 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      color: #7d90C5;
-    }
-
-    .card-right p {
-      margin: 0;
-      color: #333;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    /* Mission Left */
-    .container .card:nth-child(1) {
-      justify-content: flex-start;
-    }
-    .container .card:nth-child(1) {
-      flex-direction: row;
-      text-align: left;
-    }
-    .container .card:nth-child(1) .card-left {
-      order: 1;
-      margin-right: 20px;
-    }
-    .container .card:nth-child(1) .card-right {
-      order: 2;
-      text-align: left;
-    }
-    
-
-    /* Vision Right */
-    .container .card:nth-child(2) {
-      justify-content: flex-end;
-      flex-direction: row-reverse;
-      text-align: right;
-    }
-    .container .card:nth-child(2) .card-left {
-      order: 2;
-      margin-left: 20px;
-    }
-    .container .card:nth-child(2) .card-right {
-      order: 1;
-      text-align: left;
-    }
-
-
-@media (max-width: 991px) {
-    .rs-about-bg-thumb {
-        height: 200px;
-    }}
-   @media (max-width: 767px) {
-    .rs-about-bg-thumb {
-        height: 140px;
-    }
-    .rs-section-title {
-        font-size: 22px;
-    }
-    .rs-section-subtitle {
-        font-size: 15px;
-    }
-    .rs-about-thumb-wrapper {
-        width: 100% !important;
-    }
-    .rs-section-title-wrapper {
-        text-align: center;
-    }
-    .rs-about-content {
-        text-align: center;
-    }
-    .card {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
-    .card-left {
-        order: -1 !important; /* Move icon to the top */
-        margin: 0 0 10px 0 !important;
-        width: auto !important;
-        justify-content: center !important;
-    }
-    .card-right {
-        width: 100%;
-    }
+/* Circle Card Design */
+.hero-card {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s ease;
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
 }
-        </style>
 
-           <section class="hero-section">
-    <div class="container">
-      <div class="card">
-        <div class="card-left">
-        <i class="fas fa-bullseye"></i>
-      </div>
-       <div class="card-right">
-        <h2 style="color: #7d90C5;">Mission</h2>
-        <p>
-          To deliver efficient industrial engineering solutions that optimize logistics, 
-          reduce waste, and enhance supply chain performance enabling operational 
-          excellence and sustainable growth.
-        </p>
-      </div>
+.hero-card:nth-child(1) { animation-delay: 0.2s; }
+.hero-card:nth-child(2) { animation-delay: 0.4s; }
+
+.hero-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Icon */
+.hero-icon {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 12px;
+  animation: pulse 2s infinite;
+}
+
+/* Text */
+.hero-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.hero-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.75; }
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 10px;
+  }
+  .hero-card {
+    width: 220px;
+    height: 220px;
+    padding: 25px 15px;
+  }
+  .hero-icon { font-size: 32px; }
+  .hero-card h2 { font-size: 18px; }
+  .hero-card p { font-size: 13px; }
+}
+</style>
+
+<section class="hero-section">
+  <!-- 🎥 Background Video -->
+  <video autoplay muted loop playsinline>
+    <source src="./assets/video/mv video.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🌟 Circular Cards on Top -->
+  <div class="container">
+    <div class="hero-card">
+      <div class="hero-icon"><i class="fas fa-bullseye"></i></div>
+      <h2>Mission</h2>
+      <p>To deliver efficient industrial engineering solutions that optimize logistics and reduce waste.</p>
     </div>
-      <div class="card">
-        <div class="card-left">
-        <i class="fas fa-eye"></i>
-      </div>
-      <div class="card-right">
-        <h2 style="color: #7d90C5;">Vision</h2>
-        <p>
-          To be a leading force in revolutionizing logistics through advanced industrial engineering, setting benchmarks for smart, agile, and future-ready supply chains across industries.
-        </p>
-      </div>
+    <div class="hero-card">
+      <div class="hero-icon"><i class="fas fa-eye"></i></div>
+      <h2>Vision</h2>
+      <p>To be a leading force in smart, agile, future-ready supply chains.</p>
     </div>
-</div>
-  </section>
+  </div>
+</section>
+
 
 
 
@@ -2375,6 +2281,19 @@ Explore innovative solutions and strategies transforming logistics and procureme
       margin-right: 0px; /* Adjust this value as needed */
     }
   }
+  /* Only apply margin-top for screen width 992px and above (desktop) */
+@media (min-width: 992px) {
+  .desktop-margin-top {
+    margin-top: 100px !important;
+  }
+}
+
+  /* @media (max-width: 767px) {
+  .mobile-margin-top {
+    margin-top: 30px !important;
+  }
+} */
+
 </style>
 
         </style>
@@ -2385,7 +2304,7 @@ Explore innovative solutions and strategies transforming logistics and procureme
                   <div class="row align-items-start gx-5">
 
                      <div class="col-xl-6 col-lg-6 contact-left">
-
+                
                         <div class="rs-contact-wrapper">
                             <div class="rs-section-title-wrapper">
                                 <span class="rs-section-subtitle has-theme-orange justify-content-start" style="font-weight: bold;">
@@ -2398,10 +2317,9 @@ Explore innovative solutions and strategies transforming logistics and procureme
                            <!-- </svg> -->
                            Contact
                         </span>
-                                <h2 class="rs-section-title mb-30 rs-split-text-enable split-in-fade">Have a supply chain challenge? Let’s work together!</h2>
-                                <p class="descrip">V5 Supply Chain Solutions Private Limited is committed to delivering top-notch
-                                     procurement, logistics, and intralogistics services. Connect with us to explore how we can optimize your
-                                     operations and drive efficiency across your supply chain.</p>
+                                <h4 class="rs-section-title mb-30 rs-split-text-enable split-in-fade">Simplify your supply chain with us.</h4>
+                                <p class="descrip">Let’s solve your supply chain challenges together.
+V5 delivers smart procurement, logistics, and intralogistics solutions to boost your efficiency.</p>
                             </div>
 
                             <div class="rs-contact-list">
@@ -2493,35 +2411,32 @@ Explore innovative solutions and strategies transforming logistics and procureme
                           <!-- 👉 Right Side – Logo + Identity + Location Map -->
 <div class="col-12 col-lg-6 mt-5 mt-lg-0">
 
-  <!-- 🔷 LOGO -->
-  <div class="rs-footer-widget-logo mb-4 text-center text-lg-start">
-    <a href="index.html">
-      <img src="assets/images/logo/logo final.v5.png" alt="logo" class="img-fluid" style="max-height: 100px;">
-    </a>
-  </div>
+  
 
   <!-- 📝 Identity Content -->
-  <div class="rs-footer-widget-description text-white mb-4 text-center text-lg-start">
+  <!-- <div class="rs-footer-widget-description text-white mb-4 text-center text-lg-start">
     Our identity reflects innovation and excellence in supply chain and <br> procurement
     services, symbolizing trust and professionalism since 2016.
-  </div><br>
+  </div><br> -->
 
   <!-- 📍 Location Map -->
-  <div class="rs-footer-widget-content mt-4">
-    <h5 class="rs-footer-widget-title text-white mb-3 text-center text-lg-start">Our Location</h5>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0553027024096!2d73.85036091489113!3d18.56016758739257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06e1b4fc2a5%3A0xf8ea21605cbf1fcd!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1629297222216!5m2!1sen!2sin" 
-        width="100%" 
-        height="250px" 
-        style="border:0; border-radius: 10px;" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
+   <br>
+                    <div class="rs-footer-widget-content mt-4 desktop-margin-top">
+                        <h5 class="rs-footer-widget-title text-white mb-3 text-center text-lg-start">Our Location</h5>
+                        <div class="map-container">
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0553027024096!2d73.85036091489113!3d18.56016758739257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06e1b4fc2a5%3A0xf8ea21605cbf1fcd!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1629297222216!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="250px" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
 
-</div>
+
+                    </div>
 
         </section>
         <!-- contact area end -->
