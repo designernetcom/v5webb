@@ -950,8 +950,8 @@ textarea:focus {
 
 /* Reduce container padding */
 .container, .container-fluid {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
 }
 
 /* Reduce margin-bottom for section titles and wrappers */
@@ -21592,7 +21592,7 @@ html.lenis body {
   font-size: 90px;
   font-weight: 700;
   top: 50%;
-  opacity: 0.08;
+  /* opacity: 0.08; */
   transform: translateY(-50%);
   line-height: 0.8;
   transition: all 0.5s ease;
@@ -21611,7 +21611,7 @@ html.lenis body {
 .rs-work-step-two {
   position: relative;
   z-index: 2;
-  overflow-x: clip;
+  /* overflow-x: clip; */
 }
 .rs-work-step-two .rs-work-step-bg-thumb {
   position: absolute;
