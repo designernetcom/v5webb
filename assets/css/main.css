@@ -928,7 +928,7 @@ textarea:focus {
  .section-space,
 .section-space-top,
 .section-space-bottom {
-    padding-top: 10px !important;
+    padding-top: 40px !important;
     padding-bottom: 30px !important;
 }
 .section-space-top {
@@ -2324,7 +2324,7 @@ textarea:focus {
 /* Add space between About Us and Mission/Vision section */
 .rs-about-area {
     margin-bottom: 5px !important;
-     padding-top: 60px !important;
+     padding-top: 0px !important;
 }
 /*----------------------------------------*/
 /*  2.9 Offcanvas
@@ -3040,13 +3040,13 @@ textarea:focus {
 /*  2.6 Breadcrumb
 /*----------------------------------------*/
 .rs-breadcrumb-one {
-  padding-top: 170px;
-  padding-bottom: 170px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 @media only screen and (max-width: 1199px) {
   .rs-breadcrumb-one {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -3104,7 +3104,7 @@ textarea:focus {
   list-style: none;
   position: relative;
 }
-.rs-breadcrumb-one .rs-breadcrumb-menu ul li:not(:last-child)::before {
+/* .rs-breadcrumb-one .rs-breadcrumb-menu ul li:not(:last-child)::before {
   content: "\ea6e";
   position: absolute;
   font-family: remixicon !important;
@@ -3112,7 +3112,7 @@ textarea:focus {
   inset-inline-end: -28px;
   opacity: 1;
   color: var(--rs-white);
-}
+} */
 .rs-breadcrumb-one .rs-breadcrumb-menu ul li span {
   color: var(--rs-white);
 }
@@ -13392,7 +13392,7 @@ html.lenis body {
 }
 .rs-about-twelve .rs-about-thumb {
   width: 310px;
-  height: 230px;
+  height: 195px;
   object-fit: cover;
 }
 @media only screen and (max-width: 991px) {
@@ -22708,7 +22708,7 @@ html.lenis body {
 .rs-progress-one.has-space {
   position: relative;
   z-index: 1;
-  margin-top: -190px;
+  margin-top: 0px;
 }
 .rs-progress-one.has-space::before {
   content: none;
@@ -22910,7 +22910,7 @@ html.lenis body {
 }
 .rs-history-one .rs-history-tab-item {
   display: flex;
-  gap: 30px 50px;
+  gap: 30px 0px;
   align-items: center;
   justify-content: center;
 }
@@ -22925,7 +22925,7 @@ html.lenis body {
   }
 }
 .rs-history-one .rs-history-tab-thumb img {
-  width: 100%;
+  width: 90%;
 }
 .rs-history-one .rs-history-tab .nav-link {
   background: var(--rs-white);
