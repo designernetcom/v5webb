@@ -20509,7 +20509,7 @@ html.lenis body {
   padding-inline-end: 80px;
   background: #F7F7F7;
   text-align: center;
-  margin-bottom: -340px;
+margin-bottom: -15px;
   position: relative;
   z-index: 1;
   border-radius: 4px;
@@ -20553,7 +20553,7 @@ html.lenis body {
   border-color: var(--rs-theme-orange);
 }
 .rs-contact-seven .rs-contact-btn .rs-btn:hover {
-  background: rgb(255, 92, 0);
+  background: rgb(217 9 9);
 }
 .rs-contact-eight .rs-contact-wrapper {
   position: relative;
